@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIN Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    input, button {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    #result, #abroad-result {
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow: auto;
+      max-height: 200px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>VIN Checker</h1>
+  <input type="text" id="vin" placeholder="VIN" name="vin" />
+  <input type="text" id="date" placeholder="Data (dd-mm-yyyy)" name="data-rejestracji" />
+  <input type="text" id="rej" placeholder="Numer rejestracyjny" name="rej" />
+  <button id="check-local">Sprawdź w Polsce</button>
+  <button id="check-abroad">Sprawdź zagranicznie</button>
+  <div id="result"></div>
+  <div id="abroad-result"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
